@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine;
 
 public class PortalTeleporter : MonoBehaviour {
 
-	public Transform player;
+    public Camera playerCamera;
+	public GameObject playerObject;
 	public Transform reciever;
 
 	public bool playerIsOverlapping = false;
@@ -12,8 +14,10 @@ public class PortalTeleporter : MonoBehaviour {
 
     public Vector3 playerRelative;
 
+    private Transform player;
     private void Start()
     {
+        player = playerObject.transform;
         //WorldRotation = transform.rotation;
     }
     // Update is called once per frame
@@ -32,12 +36,15 @@ public class PortalTeleporter : MonoBehaviour {
             if (playerRelative.z < 0f)
 			{
                 // Teleport him!
-                Debug.Log("Teleport!");
-				float rotationDiff = -Quaternion.Angle(transform.rotation, reciever.rotation);
+                //Debug.Log("Teleport!");
+                float rotationDiff = -(transform.eulerAngles.y - reciever.transform.eulerAngles.y); /*-Quaternion.Angle(transform.rotation, reciever.rotation);*/
 				rotationDiff += 180;
-				player.Rotate(Vector3.up, rotationDiff);
 
-				Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
+                Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
+
+
+                playerObject.GetComponent<FirstPersonController>().m_MouseLook.LookRotation(player, playerCamera.transform, true, rotationDiff);
+                //player.Rotate(Vector3.up, rotationDiff);
                 player.position = reciever.position + positionOffset;
 
 				playerIsOverlapping = false;
