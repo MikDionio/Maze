@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000054, guid: f47e6561cf2a3f443ac66024c5964801,
+  m_LightingDataAsset: {fileID: 112000192, guid: f47e6561cf2a3f443ac66024c5964801,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -13135,17 +13135,17 @@ Prefab:
     - target: {fileID: 114911155514911776, guid: cd39e7919aa1ca9478c860f34cfa9c76,
         type: 2}
       propertyPath: m_selectedFaces.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114911155514911776, guid: cd39e7919aa1ca9478c860f34cfa9c76,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114911155514911776, guid: cd39e7919aa1ca9478c860f34cfa9c76,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4049195129481234, guid: cd39e7919aa1ca9478c860f34cfa9c76, type: 2}
       propertyPath: m_LocalPosition.x
@@ -20207,17 +20207,17 @@ Prefab:
     - target: {fileID: 114089143213989956, guid: 1653a1208e45dfb4c85145ba5f3acae3,
         type: 2}
       propertyPath: m_selectedFaces.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114089143213989956, guid: 1653a1208e45dfb4c85145ba5f3acae3,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114089143213989956, guid: 1653a1208e45dfb4c85145ba5f3acae3,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4423618004093112, guid: 1653a1208e45dfb4c85145ba5f3acae3, type: 2}
       propertyPath: m_LocalPosition.x
@@ -28425,12 +28425,12 @@ Prefab:
     - target: {fileID: 114881457575248410, guid: 7a04d0ed2f3f8024fac2b5a6d41781bd,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114881457575248410, guid: 7a04d0ed2f3f8024fac2b5a6d41781bd,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114881457575248410, guid: 7a04d0ed2f3f8024fac2b5a6d41781bd,
         type: 2}
@@ -31045,17 +31045,17 @@ Prefab:
     - target: {fileID: 114387552604400788, guid: d29104c5903eaad4b9c9048b1a55afbd,
         type: 2}
       propertyPath: m_selectedFaces.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114387552604400788, guid: d29104c5903eaad4b9c9048b1a55afbd,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114387552604400788, guid: d29104c5903eaad4b9c9048b1a55afbd,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4466526846713284, guid: d29104c5903eaad4b9c9048b1a55afbd, type: 2}
       propertyPath: m_LocalPosition.x
@@ -40117,7 +40117,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.400001
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -40125,7 +40125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -27
+      value: 6.7000003
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -45732,17 +45732,17 @@ Prefab:
     - target: {fileID: 114822721723879622, guid: a78367126f597224b866c0106dc06c71,
         type: 2}
       propertyPath: m_selectedFaces.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114822721723879622, guid: a78367126f597224b866c0106dc06c71,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114822721723879622, guid: a78367126f597224b866c0106dc06c71,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114822721723879622, guid: a78367126f597224b866c0106dc06c71,
         type: 2}
@@ -47084,17 +47084,9 @@ MonoBehaviour:
     areaError: 15
   asset_guid: 
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 00000000
-  m_SelectedEdges:
-  - x: 0
-    y: 1
-  - x: 2
-    y: 0
-  - x: 1
-    y: 3
-  - x: 3
-    y: 2
-  m_selectedTriangles: 000000000100000002000000010000000300000002000000
+  m_selectedFaces: 
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!33 &1714878321
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -50644,17 +50636,17 @@ Prefab:
     - target: {fileID: 114541357354303142, guid: 2722de156f63e4341bfa986e34ea253a,
         type: 2}
       propertyPath: m_selectedFaces.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114541357354303142, guid: 2722de156f63e4341bfa986e34ea253a,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114541357354303142, guid: 2722de156f63e4341bfa986e34ea253a,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4555476834835612, guid: 2722de156f63e4341bfa986e34ea253a, type: 2}
       propertyPath: m_LocalPosition.x
