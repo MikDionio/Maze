@@ -8,27 +8,41 @@ public class PortalCamera : MonoBehaviour {
 	public Transform portal;
 	public Transform otherPortal;
     public Vector3 playerOffsetFromPortal;
+    public bool alt;
+    public float altValue;
 
     // Update is called once per frame
     void Update () {
-        playerOffsetFromPortal = playerCamera.position - otherPortal.position;
+        if (alt == true)
+        {
+            playerOffsetFromPortal = playerCamera.position - otherPortal.position;
+            float angularDifferenceBetweenPortalRotations = portal.transform.eulerAngles.y - otherPortal.transform.eulerAngles.y;
+
+            Quaternion portalRotationalDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations+180, Vector3.up);
+
+            Vector3 newCameraDirection = portalRotationalDifference * playerCamera.forward;
 
 
-        //float angularDifferenceBetweenPortalRotations = Quaternion.Angle(portal.rotation, otherPortal.rotation);4
+            transform.position = portal.position + (portalRotationalDifference * playerOffsetFromPortal);
+            transform.rotation = Quaternion.LookRotation(newCameraDirection, Vector3.up);
+        }
+        else
+        {
+            playerOffsetFromPortal = playerCamera.position - otherPortal.position;
+            float angularDifferenceBetweenPortalRotations = portal.transform.eulerAngles.y - otherPortal.transform.eulerAngles.y;
 
-        float angularDifferenceBetweenPortalRotations =  portal.transform.eulerAngles.y - otherPortal.transform.eulerAngles.y;
+            Quaternion portalRotationalDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
 
-        //Debug.Log(this.gameObject.name + ": "+ angularDifferenceBetweenPortalRotations);
-		Quaternion portalRotationalDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
-        //Debug.Log(portalRotationalDifference);
-		Vector3 newCameraDirection = portalRotationalDifference * playerCamera.forward;
+            Vector3 newCameraDirection = portalRotationalDifference * playerCamera.forward;
 
-        //Debug.Log(otherPortal.GetComponentInChildren<PortalTeleporter>().playerRelative);
-        //transform.position = portal.position + otherPortal.GetComponent<PortalTeleporter>().playerRelative;
-        transform.position = portal.position + (portalRotationalDifference * playerOffsetFromPortal);
-        //transform.position = portal.position + (playerOffsetFromPortal);
 
-        transform.rotation = Quaternion.LookRotation(newCameraDirection, Vector3.up);
-        
-	}
+            transform.position = portal.position + (portalRotationalDifference * playerOffsetFromPortal);
+            transform.rotation = Quaternion.LookRotation(newCameraDirection, Vector3.up);
+
+            //Debug.Log(this.gameObject.name + ": "+ angularDifferenceBetweenPortalRotations);
+            //Debug.Log(portalRotationalDifference);
+            //Debug.Log(otherPortal.GetComponentInChildren<PortalTeleporter>().playerRelative);
+        }
+
+    }
 }

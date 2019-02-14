@@ -10,10 +10,11 @@ public class PortalTeleporter : MonoBehaviour {
 	public Transform reciever;
 
 	public bool playerIsOverlapping = false;
+    public bool alt;
     private bool playerIsBehind = false;
 
     public Vector3 playerRelative;
-
+    
     private Transform player;
     private void Start()
     {
@@ -36,19 +37,37 @@ public class PortalTeleporter : MonoBehaviour {
             if (playerRelative.z < 0f)
 			{
                 // Teleport him!
-                //Debug.Log("Teleport!");
-                float rotationDiff = -(transform.eulerAngles.y - reciever.transform.eulerAngles.y); /*-Quaternion.Angle(transform.rotation, reciever.rotation);*/
-				rotationDiff += 180;
 
-                Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
+                if(alt == true)
+                {
+                    float rotationDiff = -(transform.eulerAngles.y - reciever.transform.eulerAngles.y);
+                    //rotationDiff += 180;
+
+                    Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
 
 
-                playerObject.GetComponent<FirstPersonController>().m_MouseLook.LookRotation(player, playerCamera.transform, true, rotationDiff);
-                //player.Rotate(Vector3.up, rotationDiff);
-                player.position = reciever.position + positionOffset;
+                    playerObject.GetComponent<FirstPersonController>().m_MouseLook.LookRotation(player, playerCamera.transform, true, rotationDiff);
+                    player.position = reciever.position + positionOffset;
 
-				playerIsOverlapping = false;
-                playerIsBehind = false;
+                    playerIsOverlapping = false;
+                    playerIsBehind = false;
+                }
+                else
+                {
+                    //Debug.Log("Teleport!");
+                    float rotationDiff = -(transform.eulerAngles.y - reciever.transform.eulerAngles.y);
+                    rotationDiff += 180;
+
+                    Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
+
+
+                    playerObject.GetComponent<FirstPersonController>().m_MouseLook.LookRotation(player, playerCamera.transform, true, rotationDiff);
+                    player.position = reciever.position + positionOffset;
+
+                    playerIsOverlapping = false;
+                    playerIsBehind = false;
+                }
+
             }
             else
             {
