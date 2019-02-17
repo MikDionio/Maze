@@ -38,7 +38,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (isTeleported)
             {
-                Debug.Log("Rotate override!");
+                //Debug.Log("Rotate override!");
                 m_CharacterTargetRot *= Quaternion.Euler(0f, rotationDiff, 0f);
 
                 character.localRotation = m_CharacterTargetRot;
