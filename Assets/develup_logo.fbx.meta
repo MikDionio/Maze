@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: b614caba653524d48a2f5727d805d90b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: D
+    100004: //RootNode
+    100006: Dpad
+    100008: dpadarrow
+    100010: dpadarrow.001
+    100012: dpadarrow.002
+    100014: dpadarrow.003
+    100016: E1
+    100018: E2
+    100020: L
+    100022: Lamp
+    100024: P
+    100026: triangle
+    100028: U
+    100030: V
+    400000: Camera
+    400002: D
+    400004: //RootNode
+    400006: Dpad
+    400008: dpadarrow
+    400010: dpadarrow.001
+    400012: dpadarrow.002
+    400014: dpadarrow.003
+    400016: E1
+    400018: E2
+    400020: L
+    400022: Lamp
+    400024: P
+    400026: triangle
+    400028: U
+    400030: V
+    2000000: Camera
+    2100000: White
+    2100002: Material.002
+    2100004: Maroon
+    2100006: Yellow
+    2100008: Green
+    2300000: D
+    2300002: Dpad
+    2300004: dpadarrow
+    2300006: dpadarrow.001
+    2300008: dpadarrow.002
+    2300010: dpadarrow.003
+    2300012: E1
+    2300014: E2
+    2300016: L
+    2300018: P
+    2300020: triangle
+    2300022: U
+    2300024: V
+    3300000: D
+    3300002: Dpad
+    3300004: dpadarrow
+    3300006: dpadarrow.001
+    3300008: dpadarrow.002
+    3300010: dpadarrow.003
+    3300012: E1
+    3300014: E2
+    3300016: L
+    3300018: P
+    3300020: triangle
+    3300022: U
+    3300024: V
+    4300000: dpadarrow.003
+    4300002: dpadarrow.002
+    4300004: dpadarrow.001
+    4300006: dpadarrow
+    4300008: Dpad
+    4300010: P
+    4300012: L
+    4300014: E2
+    4300016: E1
+    4300018: triangle
+    4300020: U
+    4300022: V
+    4300024: D
+    10800000: Lamp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
